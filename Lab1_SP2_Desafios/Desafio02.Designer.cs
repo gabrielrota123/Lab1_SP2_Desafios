@@ -22,19 +22,28 @@
             this.cmdSaludar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(25, 30);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(50, 13);
-            this.lblNombre.Text = "Nombre:";
-            // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(95, 27);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(220, 20);
+            this.txtNombre.TabIndex = 2;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(25, 30);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 3;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // lblSaludo
+            // 
+            this.lblSaludo.Location = new System.Drawing.Point(25, 115);
+            this.lblSaludo.Name = "lblSaludo";
+            this.lblSaludo.Size = new System.Drawing.Size(390, 25);
+            this.lblSaludo.TabIndex = 0;
             // 
             // cmdSaludar
             // 
@@ -43,14 +52,7 @@
             this.cmdSaludar.Size = new System.Drawing.Size(100, 30);
             this.cmdSaludar.Text = "Saludar";
             this.cmdSaludar.UseVisualStyleBackColor = true;
-            //this.cmdSaludar.Click += new System.EventHandler(this.cmdSaludar_Click);
-            // 
-            // lblSaludo
-            // 
-            this.lblSaludo.Location = new System.Drawing.Point(25, 115);
-            this.lblSaludo.Name = "lblSaludo";
-            this.lblSaludo.Size = new System.Drawing.Size(390, 25);
-            this.lblSaludo.Text = "";
+            this.cmdSaludar.Click += new System.EventHandler(this.cmdSaludar_Click);
             // 
             // Desafio02
             // 
@@ -66,8 +68,10 @@
             this.Name = "Desafio02";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Desafio 02 - Firma del evento";
+           
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }

@@ -32,12 +32,24 @@ namespace Lab1_SP2_Desafios
             // TODO 1: agregar estas ciudades al cuadro combinado:
             //         Rosario, Cordoba, Mendoza, Bahia Blanca, Salta
             //         Ayuda: cboCiudad.Items.Add("...");
-
+            cboCiudad.Items.Add("Rosario");
+                cboCiudad.Items.Add("Cordoba");
+                cboCiudad.Items.Add("Mendoza");
+                cboCiudad.Items.Add("Bahia Blanca");
+                cboCiudad.Items.Add("Salta");
+                cboCiudad.Sorted = true;
             // TODO 2: hacer que la lista se muestre ordenada alfabeticamente.
         }
 
         private void cmdMostrar_Click(object sender, EventArgs e)
         {
+            bool f = cboCiudad.SelectedIndex == -1;
+            if (f)
+            {
+                MessageBox.Show("Por favor, seleccione una ciudad");
+                return;
+            }
+            
             lblResultado.Text = "Elegiste: " + cboCiudad.SelectedItem.ToString();
         }
     }

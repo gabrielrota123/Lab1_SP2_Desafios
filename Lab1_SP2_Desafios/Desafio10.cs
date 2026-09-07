@@ -34,7 +34,10 @@ namespace Lab1_SP2_Desafios
         {
             // TODO A: rechazar toda tecla que no sea un digito.
             //         La tecla de retroceso tiene que seguir funcionando.
-        }
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar ≠ (char)Keys.Back;
+            {
+                e.Handled = true;
+            }
 
         private void mnuGuardarComo_Click(object sender, EventArgs e)
         {
@@ -45,6 +48,11 @@ namespace Lab1_SP2_Desafios
         private void mnuSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Desafio10_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -117,6 +117,9 @@
     <EmbeddedResource Include="Desafio01.resx">
       <DependentUpon>Desafio01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Desafio02.resx">
+      <DependentUpon>Desafio02.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Desafio03.resx">
       <DependentUpon>Desafio03.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +134,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Desafio07.resx">
       <DependentUpon>Desafio07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desafio08.resx">
+      <DependentUpon>Desafio08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desafio10.resx">
+      <DependentUpon>Desafio10.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

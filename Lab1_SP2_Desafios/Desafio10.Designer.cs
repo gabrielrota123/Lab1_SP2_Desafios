@@ -36,6 +36,7 @@
             this.mnuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.mnuPrincipal.Name = "mnuPrincipal";
             this.mnuPrincipal.Size = new System.Drawing.Size(450, 24);
+            this.mnuPrincipal.TabIndex = 3;
             // 
             // mnuArchivo
             // 
@@ -49,14 +50,14 @@
             // mnuGuardarComo
             // 
             this.mnuGuardarComo.Name = "mnuGuardarComo";
-            this.mnuGuardarComo.Size = new System.Drawing.Size(160, 22);
+            this.mnuGuardarComo.Size = new System.Drawing.Size(150, 22);
             this.mnuGuardarComo.Text = "Guardar como";
             this.mnuGuardarComo.Click += new System.EventHandler(this.mnuGuardarComo_Click);
             // 
             // mnuSalir
             // 
             this.mnuSalir.Name = "mnuSalir";
-            this.mnuSalir.Size = new System.Drawing.Size(160, 22);
+            this.mnuSalir.Size = new System.Drawing.Size(150, 22);
             this.mnuSalir.Text = "Salir";
             this.mnuSalir.Click += new System.EventHandler(this.mnuSalir_Click);
             // 
@@ -65,7 +66,8 @@
             this.lblLegajo.AutoSize = true;
             this.lblLegajo.Location = new System.Drawing.Point(25, 55);
             this.lblLegajo.Name = "lblLegajo";
-            this.lblLegajo.Size = new System.Drawing.Size(100, 13);
+            this.lblLegajo.Size = new System.Drawing.Size(113, 13);
+            this.lblLegajo.TabIndex = 2;
             this.lblLegajo.Text = "Legajo (solo numeros):";
             // 
             // txtLegajo
@@ -74,6 +76,7 @@
             this.txtLegajo.MaxLength = 8;
             this.txtLegajo.Name = "txtLegajo";
             this.txtLegajo.Size = new System.Drawing.Size(150, 20);
+            this.txtLegajo.TabIndex = 1;
             this.txtLegajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLegajo_KeyPress);
             // 
             // lblAviso
@@ -81,6 +84,7 @@
             this.lblAviso.Location = new System.Drawing.Point(25, 95);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(400, 45);
+            this.lblAviso.TabIndex = 0;
             this.lblAviso.Text = "Proba escribir letras en el legajo: hoy las acepta y no deberia.";
             // 
             // Desafio10
@@ -98,10 +102,12 @@
             this.Name = "Desafio10";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Desafio 10 - Tecla pulsada y menu";
+            this.Load += new System.EventHandler(this.Desafio10_Load);
             this.mnuPrincipal.ResumeLayout(false);
             this.mnuPrincipal.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }

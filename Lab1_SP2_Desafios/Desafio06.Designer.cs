@@ -83,6 +83,7 @@
             this.Name = "Desafio06";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Desafio 06 - Label vs TextBox";
+            this.Load += new System.EventHandler(this.Desafio06_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

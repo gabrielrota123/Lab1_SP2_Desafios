@@ -26,6 +26,13 @@ namespace Lab1_SP2_Desafios
         public Desafio07()
         {
             InitializeComponent();
+            this.groupBox1.Controls.Add(this.optManana);
+            this.groupBox1.Controls.Add(this.optTarde);
+            this.groupBox1.Controls.Add(this.optNoche);
+
+            this.groupBox2.Controls.Add(this.optPresencial);
+            this.groupBox2.Controls.Add(this.optVirtual);
+            this.groupBox2.Controls.Add(this.optMixta);
         }
 
         private void cmdConfirmar_Click(object sender, EventArgs e)
@@ -49,6 +56,11 @@ namespace Lab1_SP2_Desafios
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

@@ -31,15 +31,26 @@ namespace Lab1_SP2_Desafios
             switch (chkCobertura.CheckState)
             {
                 // TODO 1: caso activada  -> lblEstado.Text = "Cobertura: SI";
-
+                case CheckState.Checked :
+                    lblEstado.Text = "Cobertura: SI";
+                    break;
                 // TODO 2: caso desactivada -> lblEstado.Text = "Cobertura: NO";
-
+                case CheckState.Unchecked :
+                    lblEstado.Text = "Cobertura: NO";
+                    break;
                 // TODO 3: caso indeterminado -> lblEstado.Text = "Cobertura: sin definir";
-
+                case CheckState.Indeterminate:
+                    lblEstado.Text = "Cobertura: sin definir";
+                    break;
                 default:
                     lblEstado.Text = "(sin resolver)";
                     break;
             }
+        }
+
+        private void Desafio08_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

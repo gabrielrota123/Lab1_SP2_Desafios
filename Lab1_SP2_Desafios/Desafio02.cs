@@ -24,8 +24,9 @@ namespace Lab1_SP2_Desafios
         {
             InitializeComponent();
         }
+     
 
-        private void cmdSaludar_Click()
+        private void cmdSaludar_Click (object sender, EventArgs e)
         {
             lblSaludo.Text = "Hola, " + txtNombre.Text;
         }

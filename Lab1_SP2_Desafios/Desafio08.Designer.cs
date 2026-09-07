@@ -20,19 +20,13 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblInfo
-            // 
-            this.lblInfo.Location = new System.Drawing.Point(25, 20);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(400, 45);
-            this.lblInfo.Text = "Hace clic varias veces sobre la casilla: tiene que pasar por tres estados distintos.";
-            // 
             // chkCobertura
             // 
             this.chkCobertura.AutoSize = true;
             this.chkCobertura.Location = new System.Drawing.Point(30, 80);
             this.chkCobertura.Name = "chkCobertura";
-            this.chkCobertura.Size = new System.Drawing.Size(200, 17);
+            this.chkCobertura.Size = new System.Drawing.Size(136, 17);
+            this.chkCobertura.TabIndex = 1;
             this.chkCobertura.Text = "Cobertura odontologica";
             this.chkCobertura.ThreeState = true;
             this.chkCobertura.UseVisualStyleBackColor = true;
@@ -44,7 +38,17 @@
             this.lblEstado.Location = new System.Drawing.Point(30, 120);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(395, 30);
+            this.lblEstado.TabIndex = 0;
             this.lblEstado.Text = "(sin resolver)";
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.Location = new System.Drawing.Point(25, 20);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(400, 45);
+            this.lblInfo.TabIndex = 2;
+            this.lblInfo.Text = "Hace clic varias veces sobre la casilla: tiene que pasar por tres estados distint" +
+    "os.";
             // 
             // Desafio08
             // 
@@ -59,8 +63,10 @@
             this.Name = "Desafio08";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Desafio 08 - Casilla triestable";
+            this.Load += new System.EventHandler(this.Desafio08_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }

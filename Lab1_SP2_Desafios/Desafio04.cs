@@ -29,22 +29,20 @@ namespace Lab1_SP2_Desafios
         {
             // TODO 1: asignar al titulo de la ventana el texto
             //         "Desafio 04 - Resuelto" usando la propiedad correcta.
-
+            this.Text = "Desafio 04 - Resuelto";
             // TODO 2: impedir que el usuario redimensione la ventana
             //         (FormBorderStyle).
-
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             // TODO 3: ocultar el boton de maximizar.
-
+            this.MaximizeBox = false;
             // TODO 4: hacer que la ventana se centre respecto del formulario
             //         que la abrio (StartPosition).
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
         private void lblInfo_Click(object sender, EventArgs e)
         {
-            this.Text = "Desafio04 resuelto";
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.StartPosition = FormStartPosition.CenterParent;
+           
 
         }
     }
